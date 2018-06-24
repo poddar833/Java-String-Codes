@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+  
+    public static String getSmallestAndLargest(String s, int k) {
+        String smallest = "";
+        String largest = "";
+        TreeSet<String> ts = new TreeSet<String>();
+        for(int i=0;i<s.length();i++){
+            if(i+k <=s.length())
+                ts.add(s.substring(i,i+k));
+        }
+        
+        return ts.first() + "\n" + ts.last();
+    }
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.next();
+        int k = scan.nextInt();
+        scan.close();
+      
+        System.out.println(getSmallestAndLargest(s, k));
+    }
+}
+
+//TreeSet is use to store the unique value in asceding order (sorted form)
+//It has been implemented by "Set" and directly implemented by "SortedSet" 
+//Its methods first() and last() has been used to print minimum and maximum value respectively.
