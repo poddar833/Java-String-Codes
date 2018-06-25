@@ -1,0 +1,3 @@
+Q.  What is difference between "==" and "equals"
+==> "equals" is use for comparing contain in the object. But "=="  is use to compare the reference.
+ 
