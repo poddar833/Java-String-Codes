@@ -1,3 +1,6 @@
 Q.  What is difference between "==" and "equals"
 ==> "equals" is use for comparing contain in the object. But "=="  is use to compare the reference.
  
+Q. What is factory static method? 
+==> Method which is can be called by the name of class and returns the object of the same class is called factor static method.
+    For Example: Pattern p = Pattern.compile("ab");
