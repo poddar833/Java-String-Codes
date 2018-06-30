@@ -4,3 +4,11 @@ Q.  What is difference between "==" and "equals"
 Q. What is factory static method? 
 ==> Method which is can be called by the name of class and returns the object of the same class is called factor static method.
     For Example: Pattern p = Pattern.compile("ab");
+
+Q. Write the steps to run regular expression programm.
+==> 1.import java.util.regex.* 
+    2. Create the Pattern Object. It will tell the program what we have to match.
+          Pattern p = Pattern.compile("ab"); it will program to create object to search "ab" in the string.
+    3.Create the Matcher Object. It will search where to match the string.
+          Matcher m = p.matcher("ababbadsdabbadfabfds");
+           
